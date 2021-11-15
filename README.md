@@ -3,6 +3,7 @@
 ## 概要
 
 執筆ストレスを極力抑えたブログにしたい。
+
 - マークダウンで書く
 - オフラインでも書ける
 - リアルタイムでプレビューを表示する
@@ -27,13 +28,14 @@ https://blog.vosu.jp/
 
 ## セットアップ
 
-このリポジトリをCloneし、以下を実行してください。
+このリポジトリを Clone し、以下を実行してください。
+
 ```shell script
 // 初回は時間がかかります
 $ docker-compose up
 ```
 
-[http://localhost:3000/](http://localhost:3000/)にアクセスできれば成功です🎉
+[http://localhost:3000/](http://localhost:3000/)にアクセスできれば成功です 🎉
 
 ## 開発
 
@@ -44,9 +46,9 @@ $ docker-compose up
 ```
 
 ### 停止
+
 ```shell script
 $ docker-compose down
 ```
-
 
 ## ビルド
