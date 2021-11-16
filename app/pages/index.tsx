@@ -1,6 +1,16 @@
 import Head from 'next/head'
+import { getSortedPostsData } from '../lib/posts'
+import { GetStaticProps } from 'next'
 
-export default function Home() {
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: {
+    date: string
+    title: string
+    id: string
+  }[]
+}) {
   return (
     <div className='flex flex-col items-center justify-center min-h-screen py-2'>
       <Head>
@@ -64,6 +74,17 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
       </main>
 
       <footer className='flex items-center justify-center w-full h-24 border-t'>
@@ -79,4 +100,13 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData,
+    },
+  }
 }
