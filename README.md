@@ -7,16 +7,13 @@
 - マークダウンで書く
 - オフラインでも書ける
 - リアルタイムでプレビューを表示する
-- サムネイルコストも下げる
 
 ### URL
 
 https://blog.vosu.jp/
 
-### ドキュメント
+![bosu-blog](https://user-images.githubusercontent.com/93925139/142625720-96eda031-ad22-45d1-bd49-e56b5c823624.png)
 
-- [UI Design]
-- [WireFrame]
 
 ### 構成技術
 
