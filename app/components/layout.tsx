@@ -13,7 +13,7 @@ export default function Layout({
       </header>
       <main>{ children }</main>
       <footer className='flex justify-center items-center w-full h-20 border-t border-gray-900 border-opacity-20'>
-        <div className='pt-2 text-sm'>©︎2021, VOSU All right reserved.</div>
+        <div className='pt-1 text-sm'>©︎2021, VOSU All right reserved.</div>
       </footer>
     </div>
   )
