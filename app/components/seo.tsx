@@ -17,7 +17,7 @@ export default function Seo({
       <meta name="description" content={pageDescription} />
       <link rel='icon' href='/favicon.ico' />
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600;700&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet" />
     </Head>
   )
 }

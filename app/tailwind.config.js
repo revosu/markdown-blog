@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         notosans: ['Noto Sans JP'],
-        hind: ['Hind'],
+        inter: ['Inter'],
       },
     },
   },
