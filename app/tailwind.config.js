@@ -8,6 +8,13 @@ module.exports = {
         notosans: ['Noto Sans JP'],
         inter: ['Inter'],
       },
+      colors: {
+        category : {
+          dev: '#e5d732',
+          design: '#42c4e3',
+          life: '#e34fdd',
+        },
+      },
     },
   },
   variants: {

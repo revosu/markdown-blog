@@ -1,5 +1,6 @@
 ---
 title: 'Two Forms of Pre-rendering'
+category: 'Dev'
 date: '2020-01-01'
 ---
 
