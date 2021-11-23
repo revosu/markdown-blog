@@ -6,17 +6,17 @@ export default function CategoryTag({
   let categoryType: string
   switch (categoryTag) {
     case 'Dev':
-      categoryType = 'dev'
+      categoryType = 'bg-category-dev'
       break;
     case 'Design':
-      categoryType = 'design'
+      categoryType = 'bg-category-design'
       break;
     case 'Life':
-      categoryType = 'life'
+      categoryType = 'bg-category-life'
       break;
   }
   return(
-    <div className={`inline-block px-10 py-1.5 text-white font-bold text-xl bg-category-${categoryType} rounded-3xl tracking-wide`}>
+    <div className={`inline-block px-10 py-1.5 text-white font-bold text-xl ${categoryType} rounded-3xl tracking-wide`}>
       { categoryTag }
     </div>
   )
