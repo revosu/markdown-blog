@@ -15,6 +15,9 @@ module.exports = {
           life: '#e34fdd',
         },
       },
+      boxShadow: {
+        normal: '0 0px 20px rgba(0,0,0,0.2)',
+      }
     },
   },
   variants: {
