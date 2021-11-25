@@ -18,21 +18,23 @@ export default function Home({
 }) {
   return (
     <Layout>
-      <Seo
-        pageDescription=''
-      />
+      <Seo/>
       <div className='flex mb-12'>
         <CategoryButton
           children='New'
+          isCurrentCategory={true}
         />
         <CategoryButton
           children='Dev'
+          isCurrentCategory={false}
         />
         <CategoryButton
           children='Design'
+          isCurrentCategory={false}
         />
         <CategoryButton
           children='Life'
+          isCurrentCategory={false}
         />
       </div>
       {allPostsData.map(({ id, date, title, category}) => (

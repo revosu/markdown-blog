@@ -1,6 +1,9 @@
+import Layout from '../../components/layout'
+import Seo from '../../components/seo'
+import CategoryTag from '../../components/category-tag'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import { GetStaticProps, GetStaticPaths } from 'next'
-
+import postContent from '../../styles/postContent.module.scss'
 
 export default function Post({
   postData
@@ -9,23 +12,30 @@ export default function Post({
     title: string
     date: string
     id: string
+    category: string
     contentHtml: string
   }
 }) {
   return (
-    <div>
-      {postData.title}
-      <br />
-      {
-        postData.id
-      }
-      <br />
-      {
-        postData.date
-      }
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </div>
+    <Layout>
+      <Seo
+        pageTitle={postData.title}
+      />
+      <div className='rounded-3xl shadow-normal'>
+        <div className='p-16'>
+          <div className='pb-10'>
+            <h1 className='pb-1 text-3xl font-bold'>{ postData.title }</h1>
+            <time className='block pb-5 text-lg text-gray-900 text-opacity-50'>{ postData.date }</time>
+            <div className='block'>
+              <CategoryTag
+                categoryTag={ postData.category }
+              />
+            </div>
+          </div>
+          <div className={postContent.postContent} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </div>
+      </div>
+    </Layout>
   )
 }
 
