@@ -47,16 +47,24 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 |  TD  |  TD  |
 |  TD  |  TD  |
 
-| Head | Head | Head |
+| Head | ここにテストを書きます | Head |
 | ---- | ---- | ---- |
 | Text | Text | Text |
 | Text | Text | Text |
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Importantly, Next.js lets you **choose** which pre-rendering `form` to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
 [Googleです](https://www.google.com/)
 
 ---
 
-```bash
-cd projects
 ```
+def test
+  doing something
+end
+```
+
+Importantly, Next.js lets you **choose** which pre-rendering `form` to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+
+> kajsd;jfasdjfkajdkjads;g  
+> alkjsdkjgashdjghaksdg  
+> asdgasdgadsggasdgad  
