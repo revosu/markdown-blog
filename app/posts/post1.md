@@ -24,6 +24,8 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
+ここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きますここにテストを書きます
+
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
@@ -59,12 +61,14 @@ Importantly, Next.js lets you **choose** which pre-rendering `form` to use for e
 
 ```
 def test
-  doing something
+  doing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing somethingdoing something
 end
 ```
 
 Importantly, Next.js lets you **choose** which pre-rendering `form` to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
 
-> kajsd;jfasdjfkajdkjads;g  
-> alkjsdkjgashdjghaksdg  
+> テストですこれは  
+> alkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdgalkjsdkjgashdjghaksdg  
 > asdgasdgadsggasdgad  
+
+![image](https://placehold.jp/150x150.png)
