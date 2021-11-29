@@ -16,7 +16,7 @@ export default function Layout({
         </Link>
       </header>
       <main>
-        <div className='w-[1180px] my-0 mx-auto'>{ children }</div>
+        <div className='w-[1100px] my-0 mx-auto'>{ children }</div>
       </main>
       <footer className='flex justify-center items-center w-full h-20 border-t border-gray-900 border-opacity-20'>
         <div className='pt-1 text-sm'>©︎2021 VOSU All right reserved.</div>

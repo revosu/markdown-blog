@@ -32,7 +32,7 @@ export default function Post({
         pageTitle={postData.title}
       />
       <div className='my-20 rounded-3xl shadow-normal'>
-        <div className='p-16'>
+        <div className='p-20'>
           <div className='pb-10'>
             <h1 className='pb-1 text-3xl font-bold'>{ postData.title }</h1>
             <time className='block pb-5 text-lg text-gray-900 text-opacity-50'>{ postData.date }</time>
