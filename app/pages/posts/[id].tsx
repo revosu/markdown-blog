@@ -6,7 +6,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { getSortedPostsData } from '../../lib/posts'
 import Link from 'next/link'
 import postContent from '../../styles/postContent.module.scss'
-import ArticleCard from '../../components/article-card'
+import RelatedArticleCard from '../../components/related-article-card'
 
 export default function Post({
   postData,
@@ -26,6 +26,11 @@ export default function Post({
     id: string
   }[]
 }) {
+  const relatedArticleCardMaximumNum = 5
+  const relatedArticleCardList = allPostsData
+                                  .filter(e => e.category === postData.category && e.title !== postData.title)
+                                  .slice(0, relatedArticleCardMaximumNum)
+
   return (
     <Layout>
       <Seo
@@ -44,22 +49,24 @@ export default function Post({
           </div>
           <div className={postContent.postContent} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
-        <div className='rounded-b-3xl bg-gray-900 bg-opacity-10'>
-          <div className='p-16'>
-            {allPostsData.map(({ id, date, title, category}) => (
-              <li key={id} className='pb-10 list-none'>
-                <Link href={`/posts/${id}`}>
-                  <a>
-                    <ArticleCard
-                      title={`${title}`}
-                      category={`${category}`}
-                    />
-                  </a>
-                </Link>
-              </li>
-            ))}
+        { relatedArticleCardList.length > 0 && 
+          <div className='rounded-b-3xl bg-gray-900 bg-opacity-10'>
+            <div className='p-16'>
+              { relatedArticleCardList.map(({ id, date, title, category}) => (
+                <li key={id} className='pb-10 list-none last:pb-0'>
+                  <Link href={`/posts/${id}`}>
+                    <a>
+                      <RelatedArticleCard
+                        title={`${title}`}
+                        category={`${category}`}
+                      />
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </div>
           </div>
-        </div>
+        }
       </div>
     </Layout>
   )

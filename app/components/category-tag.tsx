@@ -16,7 +16,7 @@ export default function CategoryTag({
       break;
   }
   return(
-    <div className={`inline-block px-10 py-1.5 text-white font-bold text-xl ${categoryClassName} rounded-3xl tracking-wide`}>
+    <div className={`inline-block px-8 py-1.5 text-white font-bold text-l ${categoryClassName} rounded-3xl tracking-wide`}>
       { categoryTag }
     </div>
   )
