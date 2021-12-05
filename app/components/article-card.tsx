@@ -12,7 +12,7 @@ export default function ArticleCard({
       <h2 className='pb-2 text-3xl font-bold'>{ title }</h2>
       <div className='pb-4 text-base text-gray-900 text-opacity-50'>2021.11.05</div>
       <CategoryTag
-        categoryTag={`${category}`}
+        children={`${category}`}
       />
     </div>
   )

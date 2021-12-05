@@ -43,7 +43,7 @@ export default function Post({
             <time className='block pb-5 text-lg text-gray-900 text-opacity-50'>{ postData.date }</time>
             <div className='block'>
               <CategoryTag
-                categoryTag={ postData.category }
+                children={ postData.category }
               />
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function Post({
         { relatedArticleCardList.length > 0 && 
           <div className='rounded-b-3xl bg-gray-900 bg-opacity-10'>
             <div className='p-16'>
-              { relatedArticleCardList.map(({ id, date, title, category}) => (
+              { relatedArticleCardList.map(({ id, date, title, category }) => (
                 <li key={id} className='pb-10 list-none last:pb-0'>
                   <Link href={`/posts/${id}`}>
                     <a>

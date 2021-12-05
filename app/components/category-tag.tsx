@@ -1,10 +1,10 @@
 export default function CategoryTag({
-  categoryTag
+  children
 }: {
-  categoryTag: string
+  children: React.ReactNode
 }) {
   let categoryClassName: string
-  switch (categoryTag) {
+  switch (children) {
     case 'Dev':
       categoryClassName = 'bg-category-dev'
       break;
@@ -17,7 +17,7 @@ export default function CategoryTag({
   }
   return(
     <div className={`inline-block px-8 py-1.5 text-white font-bold text-l ${categoryClassName} rounded-3xl tracking-wide`}>
-      { categoryTag }
+      { children }
     </div>
   )
 }
