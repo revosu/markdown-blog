@@ -38,7 +38,7 @@ export default function Home({
         />
       </div>
       {allPostsData.map(({ id, date, title, category}) => (
-        <li key={id} className='pb-10 list-none'>
+        <li key={id} className='pb-10 list-none md:pb-5'>
           <Link href={`/posts/${id}`}>
             <a>
               <ArticleCard
