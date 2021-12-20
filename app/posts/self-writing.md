@@ -1,6 +1,6 @@
 ---
 title: '自己紹介です'
-category: 'Life'
+category: 'Dev'
 date: '2021-12-06'
 ---
 

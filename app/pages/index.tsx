@@ -44,6 +44,7 @@ export default function Home({
               <ArticleCard
                 title={`${title}`}
                 category={`${category}`}
+                date={`${date}`}
               />
             </a>
           </Link>
