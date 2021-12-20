@@ -36,11 +36,11 @@ export default function Post({
       <Seo
         pageTitle={postData.title}
       />
-      <div className='my-20 rounded-3xl shadow-normal'>
-        <div className='p-20'>
-          <div className='pb-10'>
-            <h1 className='pb-1 text-3xl font-bold'>{ postData.title }</h1>
-            <time className='block pb-5 text-lg text-gray-900 text-opacity-50'>{ postData.date }</time>
+      <div className='my-20 rounded-3xl shadow-normal md:my-10'>
+        <div className='p-20 md:px-4 md:py-7'>
+          <div className='pb-10 md:pb-8'>
+            <h1 className='pb-1 text-3xl font-bold md:text-2xl'>{ postData.title }</h1>
+            <time className='block pb-5 text-lg text-gray-900 text-opacity-50 md:text-sm'>{ postData.date }</time>
             <div className='block'>
               <CategoryTag
                 children={ postData.category }
