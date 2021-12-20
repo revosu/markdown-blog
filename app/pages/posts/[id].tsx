@@ -7,6 +7,7 @@ import { getSortedPostsData } from '../../lib/posts'
 import Link from 'next/link'
 import postContent from '../../styles/postContent.module.scss'
 import RelatedArticleCard from '../../components/related-article-card'
+import Date from '../../components/date'
 
 export default function Post({
   postData,
@@ -38,9 +39,9 @@ export default function Post({
       />
       <div className='my-20 rounded-3xl shadow-normal md:my-10'>
         <div className='p-20 md:px-4 md:py-7'>
-          <div className='pb-10 md:pb-8'>
+          <div className='mb-10 md:mb-8'>
             <h1 className='pb-1 text-3xl font-bold md:text-2xl'>{ postData.title }</h1>
-            <time className='block pb-5 text-lg text-gray-900 text-opacity-50 md:text-sm'>{ postData.date }</time>
+            <Date dateString={postData.date} />
             <div className='block'>
               <CategoryTag
                 children={ postData.category }
@@ -49,16 +50,17 @@ export default function Post({
           </div>
           <div className={postContent.postContent} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
-        { relatedArticleCardList.length > 0 && 
+        { relatedArticleCardList.length > 0 &&
           <div className='rounded-b-3xl bg-gray-900 bg-opacity-10'>
-            <div className='p-16'>
+            <div className='p-16 md:px-4 md:py-10'>
               { relatedArticleCardList.map(({ id, date, title, category }) => (
-                <li key={id} className='pb-10 list-none last:pb-0'>
+                <li key={id} className='pb-10 list-none last:pb-0 md:pb-6'>
                   <Link href={`/posts/${id}`}>
                     <a>
                       <RelatedArticleCard
                         title={`${title}`}
                         category={`${category}`}
+                        date={`${date}`}
                       />
                     </a>
                   </Link>
