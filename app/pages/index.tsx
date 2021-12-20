@@ -19,7 +19,7 @@ export default function Home({
   return (
     <Layout>
       <Seo/>
-      <div className='flex mb-12'>
+      <div className='flex mb-12 md:overflow-x-auto md:mb-4'>
         <CategoryButton
           children='New'
           isCurrentCategory={true}
@@ -38,7 +38,7 @@ export default function Home({
         />
       </div>
       {allPostsData.map(({ id, date, title, category}) => (
-        <li key={id} className='pb-10 list-none'>
+        <li key={id} className='pb-10 list-none md:pb-5'>
           <Link href={`/posts/${id}`}>
             <a>
               <ArticleCard
