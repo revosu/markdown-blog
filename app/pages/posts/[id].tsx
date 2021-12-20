@@ -49,7 +49,7 @@ export default function Post({
           </div>
           <div className={postContent.postContent} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
-        { relatedArticleCardList.length > 0 && 
+        { relatedArticleCardList.length > 0 &&
           <div className='rounded-b-3xl bg-gray-900 bg-opacity-10'>
             <div className='p-16'>
               { relatedArticleCardList.map(({ id, date, title, category }) => (
